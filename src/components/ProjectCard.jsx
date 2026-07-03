@@ -1,10 +1,40 @@
+import { useState } from "react";
+
 function ProjectCard({ title, description, technologies }) {
+  const [open, setOpen] = useState(false);
+
   return (
     <article className="project-card">
-      <h3>{title}</h3>
-      <p>{description}</p>
+      <h4>{title}</h4>
+
+      <div
+        className="description-toggle"
+        onClick={() => setOpen(!open)}
+        style={{
+          cursor: "pointer",
+          display: "flex",
+          alignItems: "center",
+          gap: "8px",
+        }}
+      >
+        <span>Description</span>
+        <span
+          className="triangle"
+          style={{
+            display: "inline-block",
+            transition: "transform 0.3s",
+            transform: open ? "rotate(90deg)" : "rotate(0deg)",
+          }}
+        >
+          ▶
+        </span>
+      </div>
+
+      {open && <p className="project-description">{description}</p>}
+
+      <br />
       <p>
-        <strong>Technologies:</strong>
+        <strong>Technologies: </strong>
         {technologies}
       </p>
     </article>

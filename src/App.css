@@ -17,43 +17,13 @@
   }
 }
 
-.hero {
-  position: relative;
-
-  .base,
-  .framework,
-  .vite {
-    inset-inline: 0;
-    margin: 0 auto;
-  }
-
-  .base {
-    width: 170px;
-    position: relative;
-    z-index: 0;
-  }
-
-  .framework,
-  .vite {
-    position: absolute;
-  }
-
-  .framework {
-    z-index: 1;
-    top: 34px;
-    height: 28px;
-    transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg)
-      scale(1.4);
-  }
-
-  .vite {
-    z-index: 0;
-    top: 107px;
-    height: 26px;
-    width: auto;
-    transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg)
-      scale(0.8);
-  }
+.headshot {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow);
 }
 
 #center {
@@ -70,7 +40,8 @@
   }
 }
 
-#about {
+#about,
+#projects {
   display: flex;
   border-top: 1px solid var(--border);
   text-align: left;
@@ -95,7 +66,8 @@
   }
 }
 
-#about {
+#about,
+#projects {
   border-right: 1px solid var(--border);
 
   @media (max-width: 1024px) {
@@ -104,7 +76,7 @@
   }
 }
 
-#next-steps ul {
+#skills ul {
   list-style: none;
   padding: 0;
   display: flex;
