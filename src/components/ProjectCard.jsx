@@ -1,11 +1,18 @@
 import { useState } from "react";
 
-function ProjectCard({ title, description, technologies }) {
+function ProjectCard({
+  title,
+  description,
+  projectImage,
+  altText,
+  technologies,
+}) {
   const [open, setOpen] = useState(false);
 
   return (
     <article className="project-card">
       <h4>{title}</h4>
+      <img src={projectImage} alt={altText} className="projectImage" />
 
       <div
         className="description-toggle"
