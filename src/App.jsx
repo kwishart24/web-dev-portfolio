@@ -15,8 +15,6 @@ function App() {
         </div>
       </section>
 
-      <div className="ticks"></div>
-
       <section id="about">
         <div id="about">
           <About />
