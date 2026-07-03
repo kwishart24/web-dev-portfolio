@@ -2,6 +2,8 @@
 import Header from "./components/Header";
 //import headshot from "./assets/headshot.jpg";
 import About from "./components/About";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import "./App.css";
 
@@ -19,21 +21,32 @@ function App() {
       <div className="ticks"></div>
 
       <section id="about">
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-        </div>
         <div id="about">
           <About />
         </div>
       </section>
 
-      <div className="ticks">
+      <div className="ticks"></div>
+
+      <section id="projects">
+        <div id="projects">
+          <Projects />
+        </div>
+      </section>
+
+      <div className="ticks"></div>
+
+      <section id="skills">
+        <div id="skills">
+          <Skills />
+        </div>
+      </section>
+
+      <div className="ticks"></div>
+      <section id="footer">
         <Footer />
-      </div>
+      </section>
+
       <section id="spacer"></section>
     </>
   );
