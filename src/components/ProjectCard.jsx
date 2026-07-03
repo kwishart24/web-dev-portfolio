@@ -39,11 +39,12 @@ function ProjectCard({
 
       {open && <p className="project-description">{description}</p>}
 
-      <br />
       <p>
         <strong>Technologies: </strong>
         {technologies}
       </p>
+      <br />
+      <br />
     </article>
   );
 }

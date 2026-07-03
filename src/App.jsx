@@ -2,12 +2,11 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
-  //const [count, setCount] = useState(0);
-
   return (
     <>
       <section id="center">
@@ -24,7 +23,7 @@ function App() {
         </div>
       </section>
 
-      <div className="ticks"></div>
+      <section id="spacer"></section>
 
       <section id="projects">
         <div id="projects">
@@ -32,7 +31,7 @@ function App() {
         </div>
       </section>
 
-      <div className="ticks"></div>
+      <section id="spacer"></section>
 
       <section id="skills">
         <div id="skills">
@@ -40,12 +39,19 @@ function App() {
         </div>
       </section>
 
-      <div className="ticks"></div>
-      <section id="footer">
-        <Footer />
+      <section id="spacer"></section>
+
+      <section id="experience">
+        <div id="experience">
+          <Experience />
+        </div>
       </section>
 
       <section id="spacer"></section>
+
+      <section id="footer">
+        <Footer />
+      </section>
     </>
   );
 }

@@ -20,6 +20,8 @@ function Skills() {
           <li key={skill}>{skill}</li>
         ))}
       </ul>
+      <br />
+      <br />
     </section>
   );
 }

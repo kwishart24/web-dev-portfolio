@@ -25,7 +25,7 @@ function Projects() {
         <ProjectCard
           title="Rolodex"
           projectImage={Rolodex}
-          altText="Swagger documentation for the Node Homework API."
+          altText="Screenshot of contact information in Rolodex app."
           description="Rolodex is a full-stack React application for organizing professional contacts and keeping track of important interactions. It combines a clean, intuitive UI with a real Airtable backend, allowing users to create, update, and manage contacts, upload headshots, and attach notes — all in one place."
           technologies="React + React Router, Airtable API, Cloudinary Upload, Vite"
         />
