@@ -70,7 +70,7 @@
   }
 }
 
-#next-steps {
+#about {
   display: flex;
   border-top: 1px solid var(--border);
   text-align: left;
@@ -95,7 +95,7 @@
   }
 }
 
-#docs {
+#about {
   border-right: 1px solid var(--border);
 
   @media (max-width: 1024px) {
@@ -167,7 +167,7 @@
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: -4.5px;
     border: 5px solid transparent;
